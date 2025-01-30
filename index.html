@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wanderlust Adventures - Explore the world with our exclusive travel packages.">
+    <meta name="keywords" content="travel, adventure, packages, tours, Wanderlust Adventures">
+    <meta name="author" content="Wanderlust Adventures Team">
+    <title>Wanderlust Adventures</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <!--NAVBAR-->
+
+    <header>
+        <div class="logo">Wanderlust Adventures</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <button class="cta-button">Book Now</button>
+    </header>
+
+    <!--HERO SECTION-->
+
+    <section class="hero">
+        <h1>Explore the World with Wanderlust Adventures</h1>
+        <input type="text" placeholder="Where do you want to go?">
+    </section>
+
+    <!--DESTINATIONS-->
+
+    <section class="destinations" id="destinations">
+        <h2>Featured Destinations</h2>
+        <div class="destination-container">
+            <div class="destination-card">
+                <img src="images/paris.jpg" alt="Paris">
+                <h3>Paris</h3>
+                <p>The city of lights.</p>
+                <button>View More</button>
+            </div>
+            <div class="destination-card">
+                <img src="images/maldives.jpg" alt="Maldives">
+                <h3>Maldives</h3>
+                <p>A tropical paradise.</p>
+                <button>View More</button>
+            </div>
+            <div class="destination-card">
+                <img src="images/skardu.jpg" alt="Skardu">
+                <h3>Skardu</h3>
+                <p>A breathtaking mountain region.</p>
+                <button>View More</button>
+            </div>
+            <div class="destination-card">
+                <img src="images/dubai.jpg" alt="Dubai">
+                <h3>Dubai</h3>
+                <p>The city of innovation and luxury.</p>
+                <button>View More</button>
+            </div>
+            <div class="destination-card">
+                <img src="images/nyc.jpg" alt="New York">
+                <h3>New York</h3>
+                <p>The city that never sleeps.</p>
+                <button>View More</button>
+            </div>
+            <div class="destination-card">
+                <img src="images/rome.jpg" alt="Rome">
+                <h3>Rome</h3>
+                <p>The Eternal City with rich history and culture.</p>
+                <button>View More</button>
+            </div>
+            <div class="destination-card">
+                <img src="images/berlin.jpg" alt="Berlin">
+                <h3>Berlin</h3>
+                <p>The capital of Germany, rich in history and culture.</p>
+                <button>View More</button>
+            </div>
+            <div class="destination-card">
+                <img src="images/uppsala.jpg" alt="Uppsala">
+                <h3>Uppsala</h3>
+                <p>Home to Sweden’s oldest university and historical landmarks.</p>
+                <button>View More</button>
+            </div>
+        </div>
+    </section>
+
+    <!--PACKAGES-->
+
+    <section class="packages" id="packages">
+        <h2>Our Packages</h2>
+        <div class="package">
+            <h3>Honeymoon Getaway</h3>
+            <p>Enjoy a romantic escape with our exclusive honeymoon package.</p>
+            <p>Price: $2999</p>
+            <button>Learn More</button>
+        </div>
+        <div class="package">
+            <h3>Adventure Trails</h3>
+            <p>Experience thrilling adventures with our adventure trails package.</p>
+            <p>Price: $1999</p>
+            <button>Learn More</button>
+        </div>
+        <div class="package">
+            <h3>Family Trips</h3>
+            <p>Create unforgettable memories with our family trips package.</p>
+            <p>Price: $1499</p>
+            <button>Learn More</button>
+        </div>
+        <div class="package">
+            <h3>Beach Retreat</h3>
+            <p>Relax and unwind with our luxury beach retreat package.</p>
+            <p>Price: $2499</p>
+            <button>Learn More</button>
+        </div>
+        <div class="package">
+            <h3>Mountain Escape</h3>
+            <p>Get away from it all with our peaceful mountain escape package.</p>
+            <p>Price: $1999</p>
+            <button>Learn More</button>
+        </div>
+        <div class="package">
+            <h3>City Tour</h3>
+            <p>Explore the sights and sounds of the city with our city tour package.</p>
+            <p>Price: $999</p>
+            <button>Learn More</button>
+        </div>
+        <div class="package">
+            <h3>Luxury Cruise</h3>
+            <p>Set sail on an unforgettable luxury cruise with world-class amenities.</p>
+            <p>Price: $3999</p>
+            <button>Learn More</button>
+        </div>
+    </section>
+
+    <!--TESTIMONIALS-->
+
+    <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial">
+            <img src="images/profile1.jpg" alt="Client 1">
+            <p>"Wanderlust Adventures made our honeymoon unforgettable!" - Jane Doe</p>
+        </div>
+        <div class="testimonial">
+            <img src="images/profile2.jpg" alt="Client 2">
+            <p>"The best travel experience I've ever had!" - John Smith</p>
+        </div>
+        <div class="testimonial">
+            <img src="images/profile3.jpg" alt="Client 3">
+            <p>"A once-in-a-lifetime adventure! Can't wait for our next trip!" - Sarah Lee</p>
+        </div>
+        <div class="testimonial">
+            <img src="images/profile4.jpg" alt="Client 4">
+            <p>"Amazing service and beautiful destinations. Highly recommend!" - Michael Brown</p>
+        </div>
+    </section>
+
+    <!--CONTACT US-->
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-content">
+            <!-- Contact Form -->
+            <form onsubmit="return validateForm()">
+                <!-- Add content above the form -->
+                <div class="form-header">
+                    <h3>Get In Touch</h3>
+                    <p>If you have any questions or inquiries, feel free to send us a message using the form below.</p>
+                </div>
+    
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+    
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <h2>Contact Info</h2>
+                <p>Email: info@wanderlustadventures.com</p>
+                <p>Phone: +123 456 7890</p>
+                <p>Address: 123 Travel Lane, Adventure City</p>
+    
+                <!-- Social Icons Section -->
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+
+    <!--FOOTER-->
+
+    <footer class="outer-footer">
+        <div class="footer-section">
+            <h3>Explore</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#terms">Terms and Conditions</a></li>
+                <li><a href="#privacy">Privacy Policy</a></li>
+                <li><a href="#faqs">FAQs</a></li>
+                <li><a href="#help">Help</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <ul>
+                <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+                <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+    <footer class="inner-footer">
+        <div class="footer-content">
+            <p>© 2025 Wanderlust Adventures. All rights reserved.</p>
+            <ul>
+                <li><a href="#terms">Terms and Conditions</a></li>
+                <li><a href="#privacy">Privacy Policy</a></li>
+                <li><a href="#faqs">FAQs</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,759 @@
+body {
+    font-family: "Montserrat", "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/*NAVBAR*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #06023a;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    color: #FF5733;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #FF5733;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+nav ul li a:hover {
+    color: #204d7e; /* Change color on hover */
+}
+
+.cta-button {
+    background-color: #FF5733;
+    color: #06023a;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.cta-button:hover {
+    background-color: #204d7e; /* Change background color on hover */
+    color: #fff;
+}
+
+/*HERO SECTION*/
+
+.hero {
+    background-image: url('images/travel.jpeg');
+    background-size: cover; /* Ensure the image covers the section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating */
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+/* Add a semi-transparent overlay for better readability */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+}
+
+/* Ensure text appears above overlay */
+.hero h1, .hero input {
+    position: relative;
+    z-index: 1;
+}
+
+/* Style the search bar */
+.hero input {
+    width: 80%;
+    max-width: 400px;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hero input::placeholder {
+    color: #999;
+}
+
+/*HEADING*/
+
+h2 {
+    font-size: 2.5em;  
+    color: #06023a;  
+    text-transform: uppercase;  
+    font-family: "Montserrat", "Open Sans", sans-serif;  
+    text-align: center;  
+    letter-spacing: 3px;  
+    margin-bottom: 30px;  
+    position: relative;  
+}
+
+/* Adding an underline to the heading */
+h2::after {
+    content: '';  
+    display: block;
+    width: 60%;  /* Width of the underline */
+    height: 3px;  /* Thickness of the underline */
+    background-color: #E68900;  /* Blue color for the underline */
+    margin: 20px auto 0;  /* Position the underline below the heading */
+}
+
+/*DESTINATIONS*/
+
+.destinations {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.destination-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.destination-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.destination-card:hover {
+    transform: scale(1.05);
+}
+
+.destination-card img {
+    width: 100%;
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.destination-card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.destination-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+.destination-card button {
+    background: #FF9800;
+    color: #06023a;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.destination-card button:hover {
+    background: #06023a;
+    color: #E68900;
+}
+
+
+
+/* PACKAGES */
+
+.packages {
+    padding: 40px 20px;  
+    display: grid;  /* Use grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 30px;  
+    justify-items: center;  
+    background-color: #f8f8f8;  
+    text-align: center;  
+}
+
+/* Styling each individual package card */
+.package {
+    background-color: white;  
+    border: 1px solid #ddd; 
+    padding: 20px;
+    border-radius: 10px;  
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  
+    width: 100%;  
+    max-width: 350px;  
+}
+
+.package h3 {
+    font-size: 1.8em; 
+    margin-bottom: 15px;  
+    color: #333;  
+}
+
+.package p {
+    font-size: 1.1em;  
+    color: #666;  
+    margin-bottom: 20px;  
+}
+
+.package button {
+    background-color: #E68900;  
+    color: #06023a;  
+    border: none;
+    padding: 12px 20px;  
+    border-radius: 5px;  
+    cursor: pointer;  
+    font-size: 1.1em;  
+    transition: background-color 0.3s ease;  
+}
+
+.package button:hover {
+    background-color: #06023a;  
+    color: #E68900;
+}
+
+/* Hover effects for the package cards */
+.package:hover {
+    transform: translateY(-10px);  
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  
+}
+
+
+
+/* TESTIMONIALS */
+
+.testimonials {
+    padding: 40px 20px;  
+    background-color: #f9f9f9; 
+    text-align: center;  
+}
+
+/* Styling each testimonial item */
+.testimonial {
+    display: flex;  
+    align-items: center;  
+    margin-bottom: 25px;  
+    background-color: white;  
+    padding: 15px;  
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Smooth transition for hover effects */
+}
+
+/* Styling the profile images */
+.testimonial img {
+    border-radius: 50%;  
+    width: 60px;  
+    height: 60px; 
+    margin-right: 20px;  
+    object-fit: cover; 
+}
+
+/* Styling the testimonial text */
+.testimonial p {
+    font-size: 1.1em;  /* Slightly larger font size */
+    color: #555;  /* Grey color for the text */
+    font-style: italic;  /* Italicized text for emphasis */
+}
+
+/* Hover effect for each testimonial */
+.testimonial:hover {
+    transform: translateY(-5px);  /* Slight lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);  /* More prominent shadow */
+}
+
+
+/* Contact Us */
+
+#contact {
+    padding: 60px 20px;
+    background-color: #f4f4f4;  /* Light grey background */
+    text-align: center;
+    border-top: 4px solid #06023a;
+}
+
+
+/* Contact Content Layout (Flexbox) */
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding: 40px;
+    border-radius: 8px;  /* Rounded corners for content */
+}
+
+.form-header {
+    margin-bottom: 30px; /* Space between the header and form fields */
+    text-align: center;
+}
+
+.form-header h3 {
+    font-size: 1.8em;
+    color: #06023a;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.form-header p {
+    font-size: 1.1em;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Form Styling */
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    flex: 1;
+    background-color: #fff;
+    padding: 40px ;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Fields and Textarea */
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #06023a;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: "Montserrat", "Open Sans", sans-serif;
+}
+
+/* Focus Effect */
+#contact form input:focus,
+#contact form textarea:focus {
+    border-color: #E68900;
+    outline: none;
+}
+
+/* Button Styling */
+#contact form button {
+    background-color: #E68900;
+    color: #06023a;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effect */
+#contact form button:hover {
+    background-color: #06023a;
+    color: #E68900;
+}
+
+/* Contact Info Styling */
+.contact-info {
+    font-size: 1.1em;
+    color: #E68900;
+    flex: 1;
+    background-color: #06023a;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+    font-size: 1.5em;
+    color: #E68900;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+/* Social Icons Styling */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icon {
+    font-size: 1.5em;
+    color: #E68900;
+    margin: 0 10px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #204d7e;
+    transform: translateY(-5px);
+}
+
+/* Add icon fonts for social media */
+.fab {
+    font-family: "Font Awesome 5 Brands";
+}
+
+/*FOOTER*/
+
+/* Outer Footer Styling */
+.outer-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    background-color: #E68900;
+    color: #06023a;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-section h3 {
+    font-size: 1.4em;
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 10px 0;
+}
+
+.footer-section ul li a {
+    color: #06023a;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #204d7e;
+}
+
+/* Inner Footer Styling */
+.inner-footer {
+    background-color: #06023a;
+    color: #E68900;
+    padding: 5px;
+    text-align: center;
+}
+
+.inner-footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inner-footer .footer-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.inner-footer .footer-content ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.inner-footer .footer-content ul li a {
+    color: #E68900;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.inner-footer .footer-content ul li a:hover {
+    color: #204d7e;
+}
+
+/*RESPONSIVE*/
+
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .destination-container {
+        flex-direction: column; /* Stack the destination cards vertically */
+        align-items: center; /* Center the cards */
+    }
+
+    .cta-button {
+        width: 100%; /* Make the CTA button full-width */
+        padding: 15px; /* Increase padding */
+    }
+
+    .hero input {
+        width: 100%; /* Make the search bar full-width */
+        padding: 12px;
+        font-size: 14px; /* Adjust font size */
+    }
+
+    .destination-card {
+        width: 90%; /* Reduce card width */
+        max-width: 300px; /* Ensure maximum width */
+    }
+
+    .package {
+        width: 100%; /* Make package cards take full width */
+    }
+
+    .testimonial {
+        flex-direction: column; /* Stack the image and text vertically */
+        text-align: center; /* Center the text */
+    }
+
+    
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 300px; /* Reduce height of hero section */
+    }
+
+    .hero input {
+        font-size: 12px; /* Adjust font size for small screens */
+    }
+
+    .destination-card {
+        width: 90%;
+        max-width: 250px; /* Further reduce card size */
+    }
+
+    .package {
+        width: 100%;
+        max-width: 280px; /* Adjust max-width for smaller screens */
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Outer Footer */
+    .outer-footer {
+        flex-direction: column;  /* Stack the sections vertically */
+        text-align: left;  /* Align text to the left */
+        padding-left: 20px;  /* Add padding to the left side */
+    }
+
+    .footer-section {
+        margin-bottom: 30px;  /* Add space between sections */
+    }
+
+    .footer-section h3 {
+        font-size: 1.3em;  /* Make headings slightly smaller */
+        margin-bottom: 15px;  /* Space between heading and list */
+    }
+
+    .footer-section ul {
+        display: flex;
+        flex-direction: column;  /* Stack the list items vertically */
+        align-items: flex-start;  /* Align items to the left */
+        text-align: left;  /* Align the text to the left */
+        margin-top: 10px;
+    }
+
+    .footer-section ul li {
+        margin: 8px 0;  /* Add space between list items */
+    }
+
+    .footer-section ul li a {
+        font-size: 1em;  /* Adjust link font size */
+        margin-bottom: 10px;  /* Space between links */
+    }
+
+    /* Inner Footer */
+    .inner-footer .footer-content {
+        display: flex;
+        flex-direction: column;  /* Stack content vertically */
+        align-items: flex-start;  /* Align items to the left */
+        text-align: left; 
+    }
+
+    .inner-footer .footer-content ul {
+        display: flex;
+        flex-direction: column;  /* Stack the list items vertically */
+        align-items: flex-start;  /* Align items to the left */
+        text-align: left;  /* Align text to the left */
+    }
+
+    .inner-footer .footer-content ul li {
+        margin: 8px 0;  /* Add space between list items */
+    }
+
+    .inner-footer .footer-content ul li a {
+        font-size: 1em;  /* Adjust link font size */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Footer Content (Text and Links) */
+    .footer-section h3 {
+        font-size: 1.2em;  /* Make headings even smaller */
+        margin-bottom: 12px;  /* Add space between heading and list */
+    }
+
+    .footer-section ul li a {
+        font-size: 0.9em;  /* Make links smaller on very small screens */
+    }
+
+    footer p {
+        margin-bottom: 10px;  /* Add space between paragraph and links on small screens */
+    }
+
+    .footer-section ul li {
+        margin: 6px 0;  /* Adjust margin for smaller screens */
+    }
+
+    .inner-footer .footer-content ul li {
+        margin: 6px 0;  /* Adjust margin for smaller screens */
+    }
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Adds space between links */
+    }
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    /* Tablet Layout */
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info,
+    #contact form {
+        max-width: 90%;
+        margin-bottom: 30px;
+    }
+    
+    .form-header h3 {
+        font-size: 1.6em;
+    }
+    
+    .contact-info h2 {
+        font-size: 1.4em;
+    }
+    
+    .social-icon {
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Mobile Layout */
+    #contact {
+        padding: 40px 10px;
+    }
+
+    .contact-content {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .contact-info,
+    #contact form {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .form-header h3 {
+        font-size: 1.4em;
+    }
+
+    .form-header p {
+        font-size: 1em;
+    }
+
+    .contact-info h2 {
+        font-size: 1.3em;
+    }
+
+    .social-icon {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Very Small Mobile Devices */
+    .contact-info,
+    #contact form {
+        padding: 20px;
+    }
+
+    .form-header h3 {
+        font-size: 1.3em;
+    }
+
+    .form-header p {
+        font-size: 0.9em;
+    }
+
+    .contact-info h2 {
+        font-size: 1.2em;
+    }
+
+    .social-icon {
+        font-size: 1.2em;
+        margin: 0 5px;
+    }
+}
